@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Display = () => {
+// const name = "Zak";
+// const profession = "Teacher";
+// const company = "Udemy"
+
+const Display = (props) => {
     return (
         <>
-            <h1>Hello, welcome to my first Component</h1>
-            <p>Lorem ipsum something something</p>
+            <h1>Hello, welcome {props.name} </h1>
+            <p>I'm a {props.profession} at {props.company} </p>
         </>
     )
 }

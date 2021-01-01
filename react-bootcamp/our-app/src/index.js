@@ -2,19 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Display from './Display';
-import DisplayAgain from './DisplayAgain';
 import * as serviceWorker from './serviceWorker';
 
-const heading = (
-  <> 
-    <p>This is a paragraph</p>
-    <h1 className="header">This is a huge heading</h1> 
-  </>
-)
-
 ReactDOM.render(
-    <DisplayAgain />,
+    <App />,
   document.getElementById('root')
 );
 
