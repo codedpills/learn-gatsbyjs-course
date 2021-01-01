@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Display from './Display';
 import * as serviceWorker from './serviceWorker';
 
 const heading = (
@@ -12,7 +13,7 @@ const heading = (
 )
 
 ReactDOM.render(
-    heading,
+    <Display />,
   document.getElementById('root')
 );
 
