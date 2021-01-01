@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 
 class DisplayAgain extends Component {
+    constructor (props) {
+        super(props);
+    }
     render() {
         return (
             <div>
-                <h1>This is my class Component.</h1>
-                <p>Welcome to this amazing component here.</p>
+                <h1>I'm enjoying learning {this.props.tech}</h1>
+                <p>I've been doing this for {this.props.num}  months</p>
             </div>
         )
     }
