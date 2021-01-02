@@ -9,7 +9,7 @@ class DisplayPosts extends Component {
           userId: 1,
           id: 1,
           title:
-            "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+            "",
           body:
             "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
         },
@@ -37,7 +37,7 @@ class DisplayPosts extends Component {
         {
           userId: 1,
           id: 5,
-          title: "nesciunt quas odio",
+          title: "",
           body:
             "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
         },
@@ -81,7 +81,7 @@ class DisplayPosts extends Component {
         {this.state.posts.map((post) => {
           return (
             <div key={post.id}>
-              <h3>{post.title}</h3>
+              <h3>{post.title && post.title}</h3>
               <p>{post.body}</p>
               <hr/>
             </div>
