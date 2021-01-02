@@ -1,14 +1,11 @@
 import React from 'react';
-import ClassCounter from './ClassCounter';
-import FunctionCounter from './FunctionCounter';
+import DisplayPosts from './DisplayPosts';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ClassCounter />
-      <br />
-      <FunctionCounter />
+      <DisplayPosts />
     </div>
   );
 }
