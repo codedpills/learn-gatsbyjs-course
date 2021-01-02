@@ -25,7 +25,7 @@ class ClassCounter extends Component {
     render() {
         return (
             <div>
-                <h2>Counter: {this.state.count} </h2>
+                <h2>Class Counter: {this.state.count} </h2>
                 <hr />
                 <button onClick={this.handleIncreaseCount}>Increase count</button>
                 <button onClick={this.handleDecreaseCount}>Decrease count</button>
