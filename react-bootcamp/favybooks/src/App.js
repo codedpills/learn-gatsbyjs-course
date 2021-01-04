@@ -1,7 +1,9 @@
 import { Component } from "react";
 import AddBook from "./components/AddBook";
 import Books from "./components/Books";
-import './App.css';
+import "./App.css";
+
+import bookImage from "./images/sincerely.jpg";
 
 class App extends Component {
   constructor(props) {
@@ -37,10 +39,13 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="app">
-        <AddBook addNewBook={this.addBook} />
-        <Books books={this.state.books} removeBook={this.removeBook} />
-      </div>
+      <>
+        <img src={bookImage} height="200px" width="1500px" />
+        <div className="app">
+          <AddBook addNewBook={this.addBook} />
+          <Books books={this.state.books} removeBook={this.removeBook} />
+        </div>
+      </>
     );
   }
 }

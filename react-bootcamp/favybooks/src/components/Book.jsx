@@ -8,7 +8,12 @@ const Book = (props) => {
       <p>Ratings: {props.ratings}</p>
       <button
         onClick={() => props.removeBook(props.id)}
-        style={{ backgroundColor: "tomato", color: "white", borderRadius: "5px", padding: "5px" }}
+        style={{
+          backgroundColor: "tomato",
+          color: "white",
+          borderRadius: "5px",
+          padding: "5px",
+        }}
       >
         Remove
       </button>
