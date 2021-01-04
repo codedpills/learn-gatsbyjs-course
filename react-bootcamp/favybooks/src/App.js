@@ -1,7 +1,7 @@
 import { Component } from "react";
-import "./App.css";
 import AddBook from "./components/AddBook";
 import Books from "./components/Books";
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="app">
         <AddBook addNewBook={this.addBook} />
         <Books books={this.state.books} removeBook={this.removeBook} />
       </div>

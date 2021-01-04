@@ -7,7 +7,7 @@ class Books extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="books">
         {this.props.books.map((book, ind) => {
           return (
             <Book

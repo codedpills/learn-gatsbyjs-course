@@ -27,8 +27,8 @@ class AddBook extends Component {
   };
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div className="">
+      <form onSubmit={this.handleSubmit} className="form">
+        <div className="form-control">
           <label htmlFor="title">Title</label>
           <input
             type="text"
@@ -37,7 +37,7 @@ class AddBook extends Component {
             value={this.state.title}
           />
         </div>
-        <div className="">
+        <div className="form-control">
           <label htmlFor="author">Author</label>
           <input
             type="text"
@@ -46,7 +46,7 @@ class AddBook extends Component {
             value={this.state.author}
           />
         </div>
-        <div className="">
+        <div className="form-control">
           <label htmlFor="ratings">Ratings</label>
           <input
             type="text"
@@ -55,7 +55,7 @@ class AddBook extends Component {
             value={this.state.ratings}
           />
         </div>
-        <button type="submit">Add favybook</button>
+        <button className="button" type="submit">Add favybook</button>
       </form>
     );
   }
